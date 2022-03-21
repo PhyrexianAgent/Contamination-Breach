@@ -26,7 +26,7 @@ public class PlayerCode : MonoBehaviour
         Vector2 velocityLocal = new Vector2(Convert.ToInt32(inputTests[1]) - Convert.ToInt32(inputTests[0]), Convert.ToInt32(inputTests[2]) - Convert.ToInt32(inputTests[3]));
         if (inputTests[0] || inputTests[1] || inputTests[2] || inputTests[3]) 
         {
-            rigidbody.velocity = velocityLocal.normalized * speed * Time.deltaTime;
+            rigidbody.velocity = velocityLocal.normalized * speed;
             
             transform.rotation = Quaternion.identity;
         }
